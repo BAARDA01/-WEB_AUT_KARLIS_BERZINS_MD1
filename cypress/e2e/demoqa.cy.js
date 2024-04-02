@@ -7,19 +7,27 @@ describe("DemoQA", () => {
     });
 
     it("Grid", () => {
-      //selects the grid
+
+      //Izvēlas grid
+
       SelectablePage.selectGrid.click();
-      // selects two,Four,Six,Eight
+
+      // selects 2 , 4  , 6 ,8 
+
       SelectablePage.selectSquare("Two").click();
       SelectablePage.selectSquare("Four").click();
       SelectablePage.selectSquare("Six").click();
       SelectablePage.selectSquare("Eight").click();
-      // check if buttons are active(blue)
+
+      // Pārbauda vai poga ir aktīva ( zils)
+
       SelectablePage.selectSquare("Two").should('have.class', 'active');
       SelectablePage.selectSquare("Four").should('have.class', 'active');
       SelectablePage.selectSquare("Six").should('have.class', 'active');
       SelectablePage.selectSquare("Eight").should('have.class', 'active');
-      // check if buttons are not active(grey)
+      
+      //Pārbauda vai ir peleks 
+      
       SelectablePage.selectSquare("One").should('not.have.class', 'active');
       SelectablePage.selectSquare("Three").should('not.have.class', 'active');
       SelectablePage.selectSquare("Five").should('not.have.class', 'active');
