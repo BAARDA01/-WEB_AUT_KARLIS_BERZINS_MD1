@@ -1,11 +1,11 @@
 # vea-2024-web-aut-juice
 ### Requirements
 ```
-### node 20
+node 20
 ```
 ### Installation
 ```
-### npm ci
+npm ci
 ```
 ```
 ### Execution
