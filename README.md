@@ -8,7 +8,7 @@ node 20
 npm ci
 
 ```
-Execution
+### Execution
 ```
 npx cypress open
 ```
