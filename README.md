@@ -10,5 +10,5 @@ npm ci
 ```
 Execution
 ```
-### npx cypress open
+npx cypress open
 ```
